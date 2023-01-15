@@ -1,0 +1,96 @@
+<link rel="stylesheet" href="/page25.css" />
+
+  
+  <div class="angle"></div>
+  
+  <div class="container">
+    <div class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.12 278">
+    </div>
+     
+        <center><h1 style="color: white;text-decoration: underline;">advantages of cloud computing:
+
+        </h1></center>
+      <div style="color:white;font-size: 110%;"
+<br>
+&#9989;Cloud computing facilitates nomadic and remote work
+
+<br>
+&#9989;Computing power allows the processing of complex tasks
+<br>
+&#9989;Flexible and scalable technology
+<br>
+&#9989;Real-time data sharing   
+
+<br>
+&#9989;Better availability
+<br>
+&#9989;Optimal IT infrastructure support
+
+<br>
+
+&#9989;A perfect adaptation to the business needs of companies<br>
+&#9989;Reduce accidental data loss<br>
+
+
+<center><h1 style="color: white;text-decoration: underline;">disadvantages of cloud computing:
+
+</h1></center>
+&#10062;Respect for data confidentiality
+
+<br>
+&#10062;data loss or theft<br>
+
+&#10062;data leakage<br>
+&#10062;account or service hijacking<br>
+&#10062;insecure interfaces and APIs<br>
+&#10062;denial of service attacks<br>
+
+&#10062;technology vulnerabilities, especially on shared environments<br>
+
+        
+        
+       </div>
+   
+    <div> <center><button><a href="/next34" style="color: white;" <span>&rarr;</span>Next &#8250;&#8250;</button> </center></div>
+        <path class="stroke stroke-1" d="M138.84,10,250.42,203.23H27.26L138.84,10m0-10L18.63,208.21H259.05L138.84,0Z"/>
+        <path class="stroke stroke-2" d="M47.79,47.79l215.95,57.86L105.65,263.74,47.79,47.79m-7.06-7.06,62.34,232.65L273.38,103.07,40.73,40.73Z"/>
+        <path class="stroke stroke-3" d="M204,27.3v224L10,139.3l194-112m5-8.67L0,139.3,209,260V18.63Z"/>
+        <path class="stroke stroke-4" d="M105.65,14.38,263.74,172.47,47.79,230.33,105.65,14.38m-2.58-9.65L40.73,237.39l232.65-62.34L103.07,4.74Z"/>
+        <path class="stroke stroke-5" d="M250.84,74.4,139.06,268,27.28,74.4H250.84m8.65-5H18.63L139.06,278,259.49,69.41Z"/>
+        <path class="stroke stroke-6" d="M172.47,14.38l57.86,215.95L14.38,172.47,172.47,14.38m2.58-9.65L4.74,175.05l232.65,62.34L175.05,4.74Z"/>
+        <path class="stroke stroke-7" d="M74.2,27.29l193.92,112L74.2,251.21V27.29m-5-8.66V259.87L278.12,139.25,69.2,18.63Z"/>
+        <path class="stroke stroke-8" d="M230.33,47.79,172.47,263.74,14.38,105.65,230.33,47.79m7.06-7.06L4.74,103.07,175.05,273.38,237.39,40.73Z"/>
+    </svg>
+  </div>
+<script>
+    $(function () {
+	
+	var Engine = {
+		ui : {
+			initBtn : function() {
+
+				var card = $('.page-title, .triangle');
+				var body = $('body');
+				var btn = $('.btn');
+
+				card.on('click', function() {
+
+					if (body.hasClass('is-open')) {
+						body.removeClass('is-open');
+						btn.html('View');
+              TweenMax.to('.angle', 1, {rotation: 45, x:  150});
+					} else {
+					  	body.addClass('is-open');
+					  	btn.html('close');
+						  TweenMax.to('.angle', 1, {rotation: 0, x: 0}); 
+					}
+				})		 
+			},
+			
+		}
+	};
+
+	Engine.ui.initBtn();
+
+})
+</script>  

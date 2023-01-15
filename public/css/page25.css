@@ -1,0 +1,112 @@
+@teal:       #ffffff;
+@blue:       #2962FF;
+@gray:       #1A1A1A;
+@rotation:   45;
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background-color: gray;
+  user-select: none;
+}
+
+  
+  .triangle {
+    transform: scale(0.7) rotate(360deg);
+  }
+  
+  .page-title {
+    color: teal;
+  }
+
+
+.angle {
+  position: fixed;
+  width: 200%;
+  height: 200%;
+  background-color: teal;
+  z-index: -1;
+  transform: translateX(20%) rotate(45deg);
+}
+ 
+
+.container {
+  cursor: pointer;
+  border: solid 0px transparent;
+  padding: 30px;
+  width: 100%; 
+  height: 100%;
+  transform: translate3d(-50%,-50%,0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: linear-gradient(230deg,#a24bcf,#4b79cf,#4bc5cf);
+  background-color : blue;
+  background-clip: content-box;
+  background-size: 4000% 4000%;
+  border-color: currentColor; 
+  animation: partytime 7s cubic-bezier(0.46, 0.03, 0.52, 0.96) infinite;  
+  transition: padding 1s cubic-bezier(0.215, 0.61, 0.355, 1);
+  will-change: transform;
+  z-index: 100;
+}
+
+.triangle {
+  width: 120px;
+  display: block;
+  transition: all 1s ease-in-out;
+  margin: 0;
+  position: fixed;
+  top: 60px;
+  left: 60px;
+}
+
+span {
+    color: #5A56D5;
+    margin: 0px 5px;
+  }
+  button {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    background:  #2461d2;;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  button::after {
+    content:'';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.8);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  button::before {
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.5);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }

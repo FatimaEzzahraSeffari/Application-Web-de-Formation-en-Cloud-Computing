@@ -1,0 +1,182 @@
+body {
+	background-color : #6d6875;
+	color : #ffcdb2;
+	font-family : sans-serif;
+	font-size : 12px;
+	padding : 0;
+	margin :0;
+	width: 100vw;
+	height: 100vh;
+}
+h1 {
+	color : black;
+	font-size: 22px;
+	font-family: serif;
+	padding : 0 6px
+}
+a {
+	text-decoration : none;
+	color : navy;
+	font-weight : 600;
+	text-shadow : 0 1px 1px #555;
+}
+a:hover {
+	text-decoration : underline;
+}
+section {
+	padding : 0;
+	margin : 0;
+}
+.secNav {
+	background-color : #e5989b;
+	padding : 6px;
+	position : relative;
+	box-shadow : 0 0 0 3px #595959;
+	z-index : 1;
+}
+.secNav ul {
+	position : absolute;
+	top : 21px;
+	right : 21px;
+}
+.secNav ul li{
+	display : inline;
+	padding : 0 6px;
+	font-size : 12px;
+	text-transform : uppercase;
+	text-decoration : none;
+}
+
+.secIntro {
+	margin : 0;
+	background-image: url(c6.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	background-origin : padding-box;
+	width:100%;
+	height : 600px;
+	position : relative;
+}
+.secIntro h1{
+    font-size : 10px;
+		width: 30%;
+		left : 1%;
+		top : 100%;
+		position:relative;
+		color : rgb(255, 255, 255);
+		font-size : 18px;
+		font-weight : 600;
+		background-color : rgba(255, 255, 255, 0.163);
+		padding: 12px;
+		box-shadow : 0 0 12px #fff;
+		line-height : 1.5;
+		text-align : center;
+		text-shadow : 0 0 1px rgb(13, 11, 11);
+        box-shadow :center;
+}
+	.secIntro p{
+		font-size : 14px;
+		width: 50%;
+		left : 25%;
+		top : 33%;
+		position: absolute;
+		color : rgb(255, 255, 255);
+		font-size : 18px;
+		font-weight : 600;
+		background-color : rgba(255, 255, 255, 0.163);
+		padding: 12px;
+		box-shadow : 0 0 12px #fff;
+		line-height : 1.5;
+		text-align : center;
+		text-shadow : 0 0 1px rgb(13, 11, 11);
+	}
+
+.secPortfolio {
+	background-image : url(https://afremov.com/image.php?type=P&id=19095);
+	position : relative;
+	
+	height : 600px;
+}
+	.secPortfolio h2 {
+		position : absolute;
+		top : 30px;
+		left : 25%;
+		font-size : 24px;
+		font-weight : 600;
+		font-family : serif;
+		padding : 6px;
+		text-shadow : 0 0 3px;
+		background-color : rgba(255, 255, 255, 0.2);
+	}
+		.container {
+			position : absolute;
+			width : 600px;
+			left : 12%;
+			top : 25%;
+			height : auto;
+		}
+			.imgParent {
+				float : left;
+				width : 190px;
+				height : 120px;
+				margin : 21px;
+				background-color : black;
+			}
+
+.secContact {
+	height : 210px;
+}
+.secContact h2 {
+	margin : 24px 0;
+	text-align : center;
+	font-family : serif;
+}
+.secContact ul {
+	display : inline;
+	font-size : 18px;
+	margin : 0 33px;
+	text-align : center;
+	line-height : 1.5;
+}
+
+span {
+    color: #5A56D5;
+    margin: 0px 5px;
+  }
+  button {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    background:  #2461d2;;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  button::after {
+    content:'';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.8);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  button::before {
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.5);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }

@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Agency";
+    src: local("Agency");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/agencyf16.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Libertad";
+    src: local("Libertad");
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/TipoType_-_Libertad-Book.woff") format("woff");
+  }
+  
+  body {
+    font-family: Libertad, Avenir, sans-serif;
+  }
+  #jaeger-specs {
+    border-collapse: collapse;
+    margin: 3rem auto;
+  }
+  
+  #jaeger-specs caption {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: Agency, sans-serif;
+  }
+  
+  #jaeger-specs td,
+  #jaeger-specs th {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  #jaeger-specs th[scope] {
+    color: rgb(15, 97, 205);
+    background-color: rgb(255, 255, 255);
+    font-weight: normal;
+  }
+  
+  #jaeger-specs tbody {
+    border: 1px solid #222;
+  }
+  
+  #jaeger-specs tbody th,
+  #jaeger-specs tbody th + td {
+    text-align: left;
+    font-weight: normal;
+  }
+  
+  #jaeger-specs tbody th {
+    font-size: 1.4rem;
+    border-right: 1px solid #222;
+    background-size: cover;
+    font-family: Agency, Arial, sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  #jaeger-specs tbody tr:nth-child(1) th {
+    background:rgb(255, 255, 255);
+  }
+  
+  #jaeger-specs tbody tr:nth-child(2) th {
+    background:rgb(255, 255, 255);
+  }
+  
+  #jaeger-specs tbody tr:nth-child(3) th {
+    background:rgb(255, 255, 255);
+  }
+  
+  #jaeger-specs tbody tr:nth-child(4) th {
+    background:rgb(255, 255, 255);
+  }
+  
+  #jaeger-specs tbody tr:nth-child(5) th {
+    background:rgb(255, 255, 255);
+  }
+  
+  #jaeger-specs tbody tr:not(:last-child) {
+    border-bottom: 1px solid #222;
+  }
+  
+  #jaeger-specs thead th[scope] {
+    border: 1px solid #222;
+    border-bottom: none;
+  }
+  
+  #jaeger-specs tbody td:not(:last-child) {
+    border-right: 1px solid #222;
+  }
+  
+  #jaeger-specs tbody td {
+    background: hsl(213, 68%, 48%);
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 500px) {
+    #jaeger-specs td,
+    #jaeger-specs th {
+      padding: .5rem;
+    }
+    #jaeger-specs th span {
+      display: none;
+    }
+  }
+  span {
+    color: #5A56D5;
+    margin: 0px 5px;
+  }
+  button {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    background:  #2461d2;;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  button::after {
+    content:'';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.8);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  button::before {
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.5);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }

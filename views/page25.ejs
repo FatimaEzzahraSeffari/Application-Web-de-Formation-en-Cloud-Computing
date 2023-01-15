@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="/page25.css" />
+
+  
+  <div class="angle"></div>
+  
+  <div class="container">
+    <div class="triangle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 278.12 278">
+    </div>
+      <center> <h1 style="font-size: 200%;color: white;text-decoration: underline;">The  economic benefits of Cloud Computing:
+
+      </h1></center> 
+      <center><p style="font-size: 180%;color: white;">TEstimates of the economic benefits of cloud solutions range from
+        very important way. It is indeed easy to measure the cost of a Cloud solution. In
+        on the other hand, it is less simple to obtain equivalent significant figures on the costs
+        In a company.
+        We can however distinguish several cases where the comparison is simple to make.
+        Application development: The benefits are on several levels. All
+        first, the supply of development machines and networks is immediate
+        without prior investment. It is an essential element of any agile approach.
+        Machine cloning and snapshots enable implementations and
+        simple backtracking. The configurations required for maintenance operations
+        or load tests are only put online if necessary and do not immobilize
+        more expensive configurations. Development infrastructure costs are
+        divided by factors of 10 to 100.
+
+
+        
+        
+        </p>
+        
+    </center>
+
+   
+    <div> <center><button><a href="/next26" style="color: white;" <span>&rarr;</span>Next &#8250;&#8250;</button> </center></div>
+        <path class="stroke stroke-1" d="M138.84,10,250.42,203.23H27.26L138.84,10m0-10L18.63,208.21H259.05L138.84,0Z"/>
+        <path class="stroke stroke-2" d="M47.79,47.79l215.95,57.86L105.65,263.74,47.79,47.79m-7.06-7.06,62.34,232.65L273.38,103.07,40.73,40.73Z"/>
+        <path class="stroke stroke-3" d="M204,27.3v224L10,139.3l194-112m5-8.67L0,139.3,209,260V18.63Z"/>
+        <path class="stroke stroke-4" d="M105.65,14.38,263.74,172.47,47.79,230.33,105.65,14.38m-2.58-9.65L40.73,237.39l232.65-62.34L103.07,4.74Z"/>
+        <path class="stroke stroke-5" d="M250.84,74.4,139.06,268,27.28,74.4H250.84m8.65-5H18.63L139.06,278,259.49,69.41Z"/>
+        <path class="stroke stroke-6" d="M172.47,14.38l57.86,215.95L14.38,172.47,172.47,14.38m2.58-9.65L4.74,175.05l232.65,62.34L175.05,4.74Z"/>
+        <path class="stroke stroke-7" d="M74.2,27.29l193.92,112L74.2,251.21V27.29m-5-8.66V259.87L278.12,139.25,69.2,18.63Z"/>
+        <path class="stroke stroke-8" d="M230.33,47.79,172.47,263.74,14.38,105.65,230.33,47.79m7.06-7.06L4.74,103.07,175.05,273.38,237.39,40.73Z"/>
+    </svg>
+  </div>
+<script>
+    $(function () {
+	
+	var Engine = {
+		ui : {
+			initBtn : function() {
+
+				var card = $('.page-title, .triangle');
+				var body = $('body');
+				var btn = $('.btn');
+
+				card.on('click', function() {
+
+					if (body.hasClass('is-open')) {
+						body.removeClass('is-open');
+						btn.html('View');
+              TweenMax.to('.angle', 1, {rotation: 45, x:  150});
+					} else {
+					  	body.addClass('is-open');
+					  	btn.html('close');
+						  TweenMax.to('.angle', 1, {rotation: 0, x: 0}); 
+					}
+				})		 
+			},
+			
+		}
+	};
+
+	Engine.ui.initBtn();
+
+})
+</script>  

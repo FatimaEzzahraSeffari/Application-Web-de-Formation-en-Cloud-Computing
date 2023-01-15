@@ -1,0 +1,48 @@
+.card-img-top.img-responsive{
+    height: 15rem;
+    max-height: 15rem;
+    text-align: center;
+    background-color: rgb(112, 112, 249);
+  }
+  span {
+    color: #5A56D5;
+    margin: 0px 5px;
+  }
+  button {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    background:  #2461d2;;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  button::after {
+    content:'';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.8);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  button::before {
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.5);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+    

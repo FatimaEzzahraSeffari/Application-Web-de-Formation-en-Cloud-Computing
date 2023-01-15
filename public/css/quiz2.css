@@ -1,0 +1,501 @@
+::root {
+	counter-reset: question;
+}
+body {
+	background-color: #000000;
+	background-image: url(https://i.imgur.com/zzIke0P.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Nunito', sans-serif;
+	line-height: 1.5;
+}
+
+section#start {
+	text-align: center;
+	margin-top: 45vh;
+}
+.congrats {
+	font-weight: bold;
+	font-size: 110%;
+	color: orange;
+}
+
+
+
+fieldset {
+	width: 570px;
+	height: 550px;
+	color: white;
+	background-color: #001233;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border: none;
+	border-radius: 10px;
+	position: relative;
+	padding: 20px;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 85px;
+	counter-increment: question;
+}
+section#start a:after {
+	/* content: " " counter(question); */
+}
+fieldset legend {
+	position: absolute;
+	top: 10px;
+	font-size: 150%;
+}
+fieldset > div {
+	margin-top: 100px;
+}
+fieldset input:checked + label {
+	border-bottom: 2px solid #fddc9b;
+}
+fieldset label::after {
+    content: "\000A";
+    white-space: pre;
+	line-height: 2;
+}
+fieldset section {
+	position: absolute;
+	top: 365px;
+	width: calc(100% - 20px);
+}
+
+.message img {
+	float: right;
+	width: 150px;
+	margin: 0 10px;
+	border-radius: 5px;
+	margin-top: -45px;
+}
+.message a {
+	color: white;
+}
+.correct img {
+	margin-top: 0;
+}
+.correct p:first-of-type {
+	font-size: 110%;
+	color: greenyellow;
+	font-weight: bold;
+}
+.incorrect {
+	font-size: 110%;
+	color: orangered;
+	font-weight: bold;
+}
+
+fieldset .button-next {
+	position: absolute;
+	bottom: -70px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+a.button {
+	color: white;
+	background-color: #001845;
+	border-radius: 10px;
+	padding: 15px 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.button:hover {
+	background-color: #002855;
+}
+
+.message,
+.button-next {
+	display: none;
+}
+input:checked ~ section .incorrect {
+	display: block;
+}
+
+
+fieldset {
+	display: none;
+}
+fieldset:target {
+	display: block;
+}
+fieldset:target ~ section#start {
+	display: none;
+}
+ .point-line {
+    list-style: none;
+    display: flex;
+  }
+  
+  .point-line li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  .white {
+    background-color: white;
+  }
+  .green {
+    background-color: green;
+  }
+
+/* Question 1 correct/incorrect answer rules */
+#q1c:checked ~ section .incorrect {
+	display: none;
+}
+#q1c:checked ~ section .correct,
+#q1a:checked ~ section .incorrect_a,
+#q1b:checked ~ section .incorrect_b,
+#q1d:checked ~ section .incorrect_d,
+#q1d:checked ~ .button-next {
+	display: block;
+}
+#q1a:checked ~ .button-next {
+	display: block;
+}
+#q1b:checked ~ .button-next {
+	display: block;
+}
+#q1c:checked ~ .button-next {
+	display: block;
+}
+
+
+/* Question 2 styles */
+fieldset#q2 {
+	height: 500px;
+	color: #ffffff;
+	background-color: #000000;
+}
+fieldset#q2 input:checked + label {
+	border-bottom: 2px solid #713d12;
+}
+/* Question 2 correct/incorrect answer rules */
+#q2d:checked ~ section .incorrect {
+	display: none;
+}
+#q2a:checked ~ section .incorrect_a,
+#q2c:checked ~ section .incorrect_c,
+#q2b:checked ~ section .incorrect_b,
+#q2d:checked ~ section .correct,
+#q2d:checked ~ .button-next {
+	display: block;
+}
+#q2a:checked ~ .button-next {
+	display: block;
+}
+#q2b:checked ~ .button-next {
+	display: block;
+}
+#q2c:checked ~ .button-next {
+	display: block;
+}
+/* Question 3 styles */
+fieldset#q3 {
+	height: 470px;
+	color: #ffffff;
+	background-color: #040613;
+}
+fieldset#q3 section {
+	top: 333px;
+}
+fieldset#q3 input:checked + label {
+	border-bottom: 2px solid #ceeefc;
+}
+/* Question 3 correct/incorrect answer rules */
+#q3c:checked ~ section .incorrect {
+	display: none;
+}
+#q3a:checked ~ section .incorrect_a,
+#q3b:checked ~ section .incorrect_b,
+#q3d:checked ~ section .incorrect_d,
+#q3c:checked ~ section .correct,
+#q3d:checked ~ .button-next {
+	display: block;
+}
+#q3a:checked ~ .button-next {
+	display: block;
+}
+#q3b:checked ~ .button-next {
+	display: block;
+}
+#q3c:checked ~ .button-next {
+	display: block;
+}
+
+
+/* Question 4 styles */
+fieldset#q4 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q4 input + label {
+	font-weight: bold;
+}
+fieldset#q4 .message.correct img {
+	width: 210px;
+}
+/* Question 4 correct/incorrect answer rules */
+#q4d:checked ~ section .incorrect {
+	display: none;
+}
+#q4a:checked ~ section .incorrect_a,
+#q4b:checked ~ section .incorrect_b,
+#q4c:checked ~ section .incorrect_c,
+#q4d:checked ~ section .correct,
+#q4d:checked ~ .button-next {
+	display: block;
+}
+#q4a:checked ~ .button-next {
+	display: block;
+}
+#q4b:checked ~ .button-next {
+	display: block;
+}
+#q4c:checked ~ .button-next {
+	display: block;
+}
+/* Question 5 styles */
+fieldset#q5 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q5 input + label {
+	font-weight: bold;
+}
+fieldset#q5 .message.correct img {
+	width: 210px;
+}
+/* Question 5 correct/incorrect answer rules */
+#q5b:checked ~ section .incorrect {
+	display: none;
+}
+#q5a:checked ~ section .incorrect_a,
+#q5d:checked ~ section .incorrect_d,
+#q5c:checked ~ section .incorrect_c,
+#q5b:checked ~ section .correct,
+#q5d:checked ~ .button-next {
+	display: block;
+}
+#q5a:checked ~ .button-next {
+	display: block;
+}
+#q5b:checked ~ .button-next {
+	display: block;
+}
+#q5c:checked ~ .button-next {
+	display: block;
+}
+
+/* Question 6 styles */
+fieldset#q6 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q6 input + label {
+	font-weight: bold;
+}
+fieldset#q6 .message.correct img {
+	width: 210px;
+}
+/* Question 6 correct/incorrect answer rules */
+#q6c:checked ~ section .incorrect {
+	display: none;
+}
+#q6a:checked ~ section .incorrect_a,
+#q6b:checked ~ section .incorrect_b,
+#q6d:checked ~ section .incorrect_d,
+#q6c:checked ~ section .correct,
+#q6d:checked ~ .button-next {
+	display: block;
+}
+#q6a:checked ~ .button-next {
+	display: block;
+}
+#q6b:checked ~ .button-next {
+	display: block;
+}
+#q6c:checked ~ .button-next {
+	display: block;
+}
+/* Question 7 styles */
+fieldset#q7 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q7 input + label {
+	font-weight: bold;
+}
+fieldset#q7 .message.correct img {
+	width: 210px;
+}
+/* Question 7 correct/incorrect answer rules */
+#q7a:checked ~ section .incorrect {
+	display: none;
+}
+#q7a:checked ~ section .correct,
+#q7b:checked ~ section .incorrect_b,
+#q7c:checked ~ section .incorrect_c,
+#q7d:checked ~ section .incorrect_d,
+#q7d:checked ~ .button-next {
+	display: block;
+}
+#q7a:checked ~ .button-next {
+	display: block;
+}
+#q7b:checked ~ .button-next {
+	display: block;
+}
+#q7c:checked ~ .button-next {
+	display: block;
+}
+/* Question 8 styles */
+fieldset#q8 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q8 input + label {
+	font-weight: bold;
+}
+fieldset#q8 .message.correct img {
+	width: 210px;
+}
+/* Question 8 correct/incorrect answer rules */
+#q8a:checked ~ section .incorrect {
+	display: none;
+}
+#q8a:checked ~ section .correct,
+#q8b:checked ~ section .incorrect_b,
+#q8c:checked ~ section .incorrect_c,
+#q8d:checked ~ section .incorrect_d,
+#q8d:checked ~ .button-next {
+	display: block;
+}
+#q8a:checked ~ .button-next {
+	display: block;
+}
+#q8b:checked ~ .button-next {
+	display: block;
+}
+#q8c:checked ~ .button-next {
+	display: block;
+}
+/* Question 9 styles */
+fieldset#q9 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q9 input + label {
+	font-weight: bold;
+}
+fieldset#q9 .message.correct img {
+	width: 210px;
+}
+/* Question 9 correct/incorrect answer rules */
+#q9c:checked ~ section .incorrect {
+	display: none;
+}
+#q9c:checked ~ section .correct,
+#q9b:checked ~ section .incorrect_b,
+#q9a:checked ~ section .incorrect_a,
+#q9d:checked ~ section .incorrect_d,
+#q9d:checked ~ .button-next {
+	display: block;
+}
+#q9a:checked ~ .button-next {
+	display: block;
+}
+#q9b:checked ~ .button-next {
+	display: block;
+}
+#q9c:checked ~ .button-next {
+	display: block;
+}
+/* Question 10 styles */
+fieldset#q10 {
+	height: 470px;
+	color: #faf0b7;
+	background-color: #000;
+}
+fieldset#q10 input + label {
+	font-weight: bold;
+}
+fieldset#q10 .message.correct img {
+	width: 210px;
+}
+/* Question 10 correct/incorrect answer rules */
+#q10c:checked ~ section .incorrect {
+	display: none;
+}
+#q10c:checked ~ section .correct,
+#q10b:checked ~ section .incorrect_b,
+#q10d:checked ~ section .incorrect_d,
+#q10a:checked ~ section .incorrect_a,
+#q10d:checked ~ .button-next {
+	display: block;
+}
+#q10a:checked ~ .button-next {
+	display: block;
+}
+#q10b:checked ~ .button-next {
+	display: block;
+}
+#q10c:checked ~ .button-next {
+	display: block;
+}
+
+span {
+	color: #5A56D5;
+	margin: 0px 5px;
+	}
+	button {
+	font-size: 20px;
+	position: relative;
+	color: white;
+	background:  #2461d2;;
+	border: 1px solid #ffffff;
+	border-radius: 20px;
+	height: 50px;
+	width: 200px;
+	padding: 10px 20px;
+	}
+	button::after {
+	content:'';
+	position: absolute;
+	left: 5px;
+	top: 5px;
+	width: 80%;
+	height: 50px;
+	padding: 15px 20px;
+	border: 1px solid rgba(#22207F,0.8);
+	height: 20px;
+	border-radius: 20px;
+	z-index: -1;
+	}
+	button::before {
+	content:'';
+	position: absolute;
+	left: 20px;
+	top: 15px;
+	width: 75%;
+	height: 50px;
+	padding: 15px 20px;
+	border: 1px solid rgba(#22207F,0.5);
+	height: 20px;
+	border-radius: 20px;
+	z-index: -1;
+	}

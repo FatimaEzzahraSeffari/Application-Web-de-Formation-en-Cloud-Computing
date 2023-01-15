@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,111,1) 35%, rgba(0,212,255,1) 100%); 
+}
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    width: 370px;
+    height: 620px;
+    background: white;
+    margin-right: 15px;
+    margin-top: 20px;  
+    border-radius: 15px;
+    transition: .5s ease;
+    border: 3px solid transparent;
+    cursor: pointer;
+}
+img{
+    width: 200px;
+    height:200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 50%;
+  border: 2px solid black;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+.p1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4{
+    text-align: center;
+}
+p{
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.card:hover{
+    box-shadow: gray 3px 1px 3px 1px;
+    transform: translateY(-30px);
+    border: 3px solid black transparent;
+  border: 3px solid black;
+}
+span {
+    color: #5A56D5;
+    margin: 0px 5px;
+  }
+  button {
+    font-size: 20px;
+    position: relative;
+    color: white;
+    background:  #2461d2;;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  button::after {
+    content:'';
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    width: 80%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.8);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
+  button::before {
+    content:'';
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 75%;
+    height: 50px;
+    padding: 15px 20px;
+    border: 1px solid rgba(#22207F,0.5);
+    height: 20px;
+    border-radius: 20px;
+    z-index: -1;
+  }
